@@ -1,0 +1,24 @@
+{% extends 'tasks/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-9 mx-auto">
+            <h1>Registration page</h1>
+
+            <form method="POST" action="">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <input class="btn btn-primary" style="margin-left: 42.5%" type="submit" value="Submit" />
+            </form>
+
+            <div class="text-center">
+                Already have an account?
+                <a href="{% url 'login' %}">Login</a>
+            </div>
+          </div>
+        </div>
+    </div>
+{% endblock content %}

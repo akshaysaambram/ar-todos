@@ -1,0 +1,11 @@
+{% extends 'tasks/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container mt-5 text-center">
+        <h1>Logout page</h1>
+
+        <p>You have been logged out!</p>
+        <a href="{% url 'login' %}">Login again</a>
+    </div>
+{% endblock content %}

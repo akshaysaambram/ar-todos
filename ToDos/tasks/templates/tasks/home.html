@@ -1,0 +1,53 @@
+{% extends 'tasks/base.html' %}
+{% load static %}
+
+{% block title %}
+    Ar ToDos | Home
+{% endblock title %}
+
+{% block content %}
+    <div id="home" class="container-fluid bg-success text-white" style="padding:50px 20px;">
+        <h1 class="text-dark">Welcome</h1>
+        <p class="text-break">
+            Welcome to our powerful ToDo list application! We know how busy life can get, and we're here to help you stay on top of your tasks and achieve your goals. With our intuitive and easy-to-use web application, you can create tasks, and prioritize your to-do list like a pro.
+        </p>
+        <p class="text-break">
+            <h5 class="text-dark">Here are some benefits of using our app:</h5>
+        </p>
+        <ul>
+            <li><h6 class="text-dark">Boost your productivity:</h6> &nbsp;&nbsp;&nbsp; Stay on track with your tasks and get more done in less time.</li>
+            <li><h6 class="text-dark">Stay organized:</h6> &nbsp;&nbsp;&nbsp; Keep all your tasks in one place and avoid forgetting important tasks.</li>
+            <li><h6 class="text-dark">Reduce stress:</h6> &nbsp;&nbsp;&nbsp; Stop worrying about what you need to do and focus on the present moment.</li>
+        </ul>
+        <p class="text-break">
+            To get started, simply <a href="{% url 'registration' %}">sign up</a> for an account and start creating your first task. Your data is safe and secure with us, and we're always here to help if you need support.
+        </p>
+    </div>
+      
+      <div id="about" class="container-fluid bg-warning" style="padding:50px 20px;">
+        <h1>About</h1>
+        <p class="text-break">
+            We are a team of passionate developers who believe that staying organized is the key to success. Our mission is to create a ToDo list web application that helps users manage their tasks and achieve their goals.
+        </p>
+        <p class="text-break">
+            Our app was created with the user in mind. We understand how overwhelming it can be to manage multiple tasks at once, and we wanted to make the process as simple and easy as possible. That's why we created a feature-packed web application that lets users create tasks, and prioritize their ToDo list with ease.
+        </p>
+        <p class="text-break">
+            We're dedicated to providing our users with the best possible experience. We're constantly working to improve our app and add new features that make task management even easier. We believe that everyone can benefit from staying organized, and we're committed to helping our users become more productive and achieve their goals.
+            Our team is made up of experienced developers who are passionate about creating innovative solutions to everyday problems. We're constantly pushing ourselves to stay ahead of the curve and provide our users with the best possible experience.
+        </p>
+      </div>
+      
+      <div id="contact" class="container-fluid bg-secondary text-white" style="padding:50px 20px;">
+        <h1>Contact</h1>
+        <p class="text-break">
+            We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, we're here to help. 
+            <br /><br />
+            If you have a question or need assistance, you can reach us at <span class="text-dark">support@todolistapp.com.</span> We'll do our best to get back to you as soon as possible.
+            <br /><br />
+            We take user feedback seriously and are always looking for ways to improve our app. If you have any suggestions, comments, or ideas for new features, we'd love to hear from you.
+            <br /><br />
+            Thank you for using our todo list web application, and we look forward to hearing from you!"
+        </p>
+      </div>
+{% endblock content %}
